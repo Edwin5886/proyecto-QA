@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1ec182e-7c59-42fa-9cc6-0c151df8cfae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bombero/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bombero/pages/InventoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/runner/InventoryTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/steps/ReporteSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/tests/InventoryManagementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/tests/ReporteInventarioSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/resources/serenity.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyecto-QA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto-QA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombero/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bombero/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombero/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/runner/LoginTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombero/tests/LoginLogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/java/com/bombero/tests/LoginLogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombero/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bombero/utils/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bombero/runner/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bombero/tests/LoginLogoutTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Command line suite/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Command line suite/Command line test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Command line suite/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Command line suite/Command line test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Command line suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Command line suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.bombero.tests.LoginLogoutTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.bombero.tests.LoginLogoutTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Command line suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Command line suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="33imvuDpLUVZ7Cz4gioJfyXk3uT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.InventoryTestRunner.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.TestRunner.executor": "Run",
+    "JUnit.ReporteInventarioTest (1).executor": "Run",
+    "JUnit.ReporteInventarioTest.executor": "Run",
+    "JUnit.ReporteInventarioTest.reporteFlujoCompletoInventario.executor": "Run",
+    "JUnit.ReporteInventarioTest.reporteNavegacionBasica.executor": "Run",
+    "Maven.Proyecto-QA [clean].executor": "Run",
+    "Maven.Proyecto-QA [install].executor": "Run",
+    "Maven.Proyecto-QA [test].executor": "Run",
+    "Maven.Proyecto-QA [verify].executor": "Run",
+    "Maven.Serenity - Ejecutar Test y Generar Reporte.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.LoginLogoutTest.executor": "Run",
+    "TestNG.ReporteInventarioTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/edwin/IdeaProjects/Proyecto-QA/src/test/resources",
+    "last_opened_file_path": "C:/Users/edwin/IdeaProjects/Proyecto-QA",
+    "onboarding.tips.debug.path": "C:/Users/edwin/IdeaProjects/Proyecto-QA/src/Main.java",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\edwin\IdeaProjects\Proyecto-QA\src\test\resources" />
+      <recent name="C:\Users\edwin\IdeaProjects\Proyecto-QA\src\resources" />
+      <recent name="C:\Users\edwin\IdeaProjects\Proyecto-QA\src\com\bombero\tests\serenity\tests" />
+      <recent name="C:\Users\edwin\IdeaProjects\Proyecto-QA\src\com\bombero\tests\serenity\steps" />
+      <recent name="C:\Users\edwin\IdeaProjects\Proyecto-QA\src\com\bombero\tests\serenity" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.bombero.runner" />
+      <recent name="com.bombero.steps" />
+      <recent name="com.bombero.tests" />
+      <recent name="com.bombero.utils" />
+      <recent name="com.bombero.pages" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Run Anything" />
+      <command value="Maven" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.InventoryTestRunner">
+    <configuration name="InventoryTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bombero.runner.InventoryTestRunner" />
+      <module name="Proyecto-QA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bombero.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReporteInventarioSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto-QA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bombero.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bombero.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bombero.tests.ReporteInventarioSteps" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReporteInventarioSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto-QA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bombero.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bombero.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bombero.tests.ReporteInventarioSteps" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReporteInventarioSteps.reporteNavegacionBasica" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto-QA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bombero.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bombero.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bombero.tests.ReporteInventarioSteps" />
+      <option name="METHOD_NAME" value="reporteNavegacionBasica" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Serenity - Ejecutar Test y Generar Reporte" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="verify" />
+                <option value="serenity:aggregate" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReporteInventarioSteps" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto-QA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bombero.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bombero.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bombero.tests.ReporteInventarioSteps" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.InventoryTestRunner" />
+      <item itemvalue="JUnit.ReporteInventarioSteps" />
+      <item itemvalue="JUnit.ReporteInventarioSteps.reporteNavegacionBasica" />
+      <item itemvalue="Maven.Serenity - Ejecutar Test y Generar Reporte" />
+      <item itemvalue="TestNG.ReporteInventarioSteps" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InventoryTestRunner" />
+        <item itemvalue="JUnit.ReporteInventarioSteps" />
+        <item itemvalue="TestNG.ReporteInventarioSteps" />
+        <item itemvalue="JUnit.ReporteInventarioSteps" />
+        <item itemvalue="JUnit.ReporteInventarioSteps.reporteNavegacionBasica" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1ec182e-7c59-42fa-9cc6-0c151df8cfae" name="Changes" comment="" />
+      <created>1759808504271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759808504271</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.cucumber:cucumber-java" />
+    <option featureType="dependencySupport" implementationName="java:junit:junit" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+    <option featureType="dependencySupport" implementationName="java:org.testng:testng" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

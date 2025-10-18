@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-10T21:48:11 CST" name="Command line suite" finished-at="2025-10-10T21:49:16 CST" duration-ms="65288">
+  <suite started-at="2025-10-17T19:47:35 CST" name="Command line suite" finished-at="2025-10-17T19:49:02 CST" duration-ms="87656">
     <groups>
     </groups>
-    <test started-at="2025-10-10T21:48:11 CST" name="Command line test" finished-at="2025-10-10T21:49:16 CST" duration-ms="65288">
-      <class name="com.bombero.tests.LoginLogoutTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bombero.tests.LoginLogoutTest@5f341870]" started-at="2025-10-10T21:48:11 CST" name="setUp" finished-at="2025-10-10T21:48:18 CST" duration-ms="7657" status="PASS">
+    <test started-at="2025-10-17T19:47:35 CST" name="Command line test" finished-at="2025-10-17T19:49:02 CST" duration-ms="87656">
+      <class name="com.bombero.tests.InventoryManagementTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bombero.tests.InventoryManagementTest@103f852]" started-at="2025-10-17T19:47:35 CST" name="setUp" finished-at="2025-10-17T19:47:40 CST" duration-ms="4994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginAndLogout()[pri:0, instance:com.bombero.tests.LoginLogoutTest@5f341870]" started-at="2025-10-10T21:48:18 CST" name="testLoginAndLogout" finished-at="2025-10-10T21:49:16 CST" duration-ms="57233" status="PASS">
+        <test-method signature="testAgregarProductoInventario()[pri:0, instance:com.bombero.tests.InventoryManagementTest@103f852]" started-at="2025-10-17T19:47:40 CST" name="testAgregarProductoInventario" finished-at="2025-10-17T19:48:59 CST" duration-ms="79599" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAndLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bombero.tests.LoginLogoutTest@5f341870]" started-at="2025-10-10T21:49:16 CST" name="tearDown" finished-at="2025-10-10T21:49:16 CST" duration-ms="334" status="PASS">
+        </test-method> <!-- testAgregarProductoInventario -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bombero.tests.InventoryManagementTest@103f852]" started-at="2025-10-17T19:48:59 CST" name="tearDown" finished-at="2025-10-17T19:49:02 CST" duration-ms="3016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.bombero.tests.LoginLogoutTest -->
+      </class> <!-- com.bombero.tests.InventoryManagementTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

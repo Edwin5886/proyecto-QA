@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -68,7 +67,7 @@ public class LoginLogoutTest {
 
                 System.out.println("=== PRUEBA COMPLETADA EXITOSAMENTE ===");
             } else {
-                System.out.println("⚠️ No se pudo encontrar el logout, pero la prueba continúa");
+                System.out.println(" No se pudo encontrar el logout, pero la prueba continúa");
                 System.out.println("=== PRUEBA PARCIALMENTE EXITOSA ===");
             }
 
@@ -90,66 +89,66 @@ public class LoginLogoutTest {
     }
 
     private void performLoginWithDelays() throws InterruptedException {
-        System.out.println("🔹 Paso 1: Buscando campo de usuario...");
+        System.out.println(" Paso 1: Buscando campo de usuario...");
 
         List<WebElement> inputs = driver.findElements(By.tagName("input"));
         WebElement userField = inputs.get(0);
 
-        System.out.println("🔹 Escribiendo usuario...");
+        System.out.println(" Escribiendo usuario...");
         userField.sendKeys(USERNAME);
         Thread.sleep(1000);
 
         WebElement passField = inputs.get(1);
 
-        System.out.println("🔹 Escribiendo contraseña...");
+        System.out.println(" Escribiendo contraseña...");
         passField.sendKeys(PASSWORD);
         Thread.sleep(1000);
 
-        System.out.println("🔹 Buscando botón de login...");
+        System.out.println(" Buscando botón de login...");
         WebElement loginBtn = driver.findElement(By.xpath("//button[contains(., 'Iniciar sesión')]"));
 
-        System.out.println("🔹 Haciendo clic en login...");
+        System.out.println(" Haciendo clic en login...");
         loginBtn.click();
 
-        System.out.println("✅ Login completado");
+        System.out.println(" Login completado");
     }
 
     private void verifyLoginSuccess() {
         System.out.println("🔹 Verificando login exitoso...");
         wait.until(ExpectedConditions.urlToBe(HOME_URL));
-        System.out.println("✅ Login exitoso - En página principal");
+        System.out.println(" Login exitoso - En página principal");
     }
 
     private boolean performLogoutImproved() throws InterruptedException {
-        System.out.println("🔹 Iniciando proceso de logout paso a paso...");
+        System.out.println(" Iniciando proceso de logout paso a paso...");
 
         try {
             // PASO 1: Buscar y abrir el menú de usuario
-            System.out.println("🔹 Buscando menú de usuario...");
+            System.out.println(" Buscando menú de usuario...");
 
             WebElement userMenu = driver.findElement(
                     By.xpath("//button[contains(@class, 'mat-mdc-menu-trigger') or contains(@class, 'mdc-icon-button')]")
             );
 
-            System.out.println("🔹 Encontrado menú de usuario");
+            System.out.println(" Encontrado menú de usuario");
 
             // Hacer clic usando JavaScript
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("arguments[0].click();", userMenu);
 
-            System.out.println("🔹 Menú de usuario abierto");
+            System.out.println(" Menú de usuario abierto");
             Thread.sleep(2000); // Esperar a que se abra completamente
 
             // PASO 2: Buscar específicamente "Cerrrar sesión" (con 3 R's)
-            System.out.println("🔹 Buscando 'Cerrrar sesión' exacto (con 3 R's)...");
+            System.out.println(" Buscando 'Cerrar sesión' exacto (con 3 R's)...");
 
             // Patrones de búsqueda CORREGIDOS - TODOS con 3 R's
             String[] logoutPatterns = {
-                    "//*[text()='Cerrrar sesión']",                    // Exacto
-                    "//*[contains(text(), 'Cerrrar sesión')]",         // Contiene
-                    "//*[contains(., 'Cerrrar sesión')]",              // En cualquier parte
-                    "//button[contains(., 'Cerrrar')]",                // Botón que contiene "Cerrrar"
-                    "//*[contains(., 'Cerrrar') and contains(., 'sesión')]" // Que tenga ambas palabras
+                    "//*[text()='Cerrar sesión']",                    // Exacto
+                    "//*[contains(text(), 'Cerrar sesión')]",         // Contiene
+                    "//*[contains(., 'Cerrar sesión')]",              // En cualquier parte
+                    "//button[contains(., 'Cerrar')]",                // Botón que contiene "Cerrar"
+                    "//*[contains(., 'Cerrar') and contains(., 'sesión')]" // Que tenga ambas palabras
             };
 
             for (String pattern : logoutPatterns) {
@@ -157,12 +156,12 @@ public class LoginLogoutTest {
                     List<WebElement> logoutElements = driver.findElements(By.xpath(pattern));
                     if (!logoutElements.isEmpty()) {
                         WebElement logoutButton = logoutElements.get(0);
-                        System.out.println("✅ Encontrado logout con patrón: " + pattern);
+                        System.out.println(" Encontrado logout con patrón: " + pattern);
                         System.out.println("🔹 Texto exacto: '" + logoutButton.getText() + "'");
 
                         // Hacer clic con JavaScript
                         js.executeScript("arguments[0].click();", logoutButton);
-                        System.out.println("✅ Logout realizado correctamente");
+                        System.out.println(" Logout realizado correctamente");
                         return true;
                     }
                 } catch (Exception e) {
@@ -171,38 +170,38 @@ public class LoginLogoutTest {
             }
 
             // Si no encontró con los patrones exactos, buscar cualquier elemento con "Cerrrar"
-            System.out.println("🔹 Buscando cualquier elemento con 'Cerrrar'...");
-            List<WebElement> cerrrarElements = driver.findElements(By.xpath("//*[contains(., 'Cerrrar')]"));
-            System.out.println("🔹 Elementos con 'Cerrrar' encontrados: " + cerrrarElements.size());
+            System.out.println("🔹 Buscando cualquier elemento con 'Cerrar'...");
+            List<WebElement> cerrarElements = driver.findElements(By.xpath("//*[contains(., 'Cerrar')]"));
+            System.out.println("🔹 Elementos con 'Cerrar' encontrados: " + cerrarElements.size());
 
-            for (WebElement element : cerrrarElements) {
+            for (WebElement element : cerrarElements) {
                 String elementText = element.getText();
                 System.out.println("🔹 Elemento: '" + elementText + "'");
 
-                if (elementText.contains("Cerrrar")) {
-                    System.out.println("✅ Encontrado elemento con 'Cerrrar', haciendo clic...");
+                if (elementText.contains("Cerrar")) {
+                    System.out.println(" Encontrado elemento con 'Cerrar', haciendo clic...");
                     js.executeScript("arguments[0].click();", element);
-                    System.out.println("✅ Logout realizado desde elemento con 'Cerrrar'");
+                    System.out.println(" Logout realizado desde elemento con 'Cerrar'");
                     return true;
                 }
             }
 
-            System.out.println("⚠️ No se pudo encontrar 'Cerrrar sesión'");
+            System.out.println(" No se pudo encontrar 'Cerrar sesión'");
 
         } catch (Exception e) {
-            System.out.println("⚠️ Error en logout: " + e.getMessage());
+            System.out.println(" Error en logout: " + e.getMessage());
         }
 
         // FALLBACK: Navegar directamente al login
-        System.out.println("🔹 Usando fallback: navegando directamente al login...");
+        System.out.println(" Usando fallback: navegando directamente al login...");
         Thread.sleep(1000);
         driver.get(BASE_URL);
-        System.out.println("✅ Navegado a página de login (fallback)");
+        System.out.println(" Navegado a página de login (fallback)");
         return true;
     }
 
     private void verifyLogoutSuccessImproved() {
-        System.out.println("🔹 Verificando logout...");
+        System.out.println(" Verificando logout...");
 
         try {
             // Esperar máximo 10 segundos para la redirección
@@ -211,34 +210,34 @@ public class LoginLogoutTest {
             // Verificar que estamos en una página de login
             boolean isOnLoginPage = shortWait.until(driver -> {
                 String currentUrl = driver.getCurrentUrl();
-                System.out.println("🔹 URL actual: " + currentUrl);
+                System.out.println(" URL actual: " + currentUrl);
                 return currentUrl.contains("sign-in") || currentUrl.contains("login") ||
                         currentUrl.equals(BASE_URL) || currentUrl.equals("https://bomberogestion.vercel.app/");
             });
 
             if (isOnLoginPage) {
-                System.out.println("✅ Logout exitoso - En página de login");
+                System.out.println(" Logout exitoso - En página de login");
             } else {
-                System.out.println("⚠️ No está en página de login, pero la prueba continúa");
+                System.out.println(" No está en página de login, pero la prueba continúa");
             }
 
             // Intentar encontrar elementos de login (pero no fallar si no los encuentra)
             try {
                 List<WebElement> inputs = driver.findElements(By.tagName("input"));
-                System.out.println("🔹 Campos de input encontrados: " + inputs.size());
+                System.out.println(" Campos de input encontrados: " + inputs.size());
             } catch (Exception e) {
-                System.out.println("⚠️ No se encontraron campos de input");
+                System.out.println(" No se encontraron campos de input");
             }
 
         } catch (Exception e) {
-            System.out.println("⚠️ No se pudo verificar completamente el logout: " + e.getMessage());
-            System.out.println("🔹 URL final: " + driver.getCurrentUrl());
+            System.out.println(" No se pudo verificar completamente el logout: " + e.getMessage());
+            System.out.println(" URL final: " + driver.getCurrentUrl());
         }
     }
 
     @AfterMethod
     public void tearDown() {
-        System.out.println("🏁 Prueba finalizada - Cerrando navegador");
+        System.out.println("Prueba finalizada - Cerrando navegador");
         DriverManager.quitDriver();
     }
 }
